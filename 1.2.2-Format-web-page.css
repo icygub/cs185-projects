@@ -1,0 +1,34 @@
+/*
+Created by John Diaz
+CS 185
+September 14, 2017
+*/
+
+h1, h2, h4, p {
+  font-family: serif;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid blue;
+  align-content: center;
+}
+
+table {
+  display: table;
+  margin: auto;
+}
+
+ul {
+  color: blue;
+  align-content: center;
+  display: table;
+  margin: auto;
+}
+
+#piano {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
