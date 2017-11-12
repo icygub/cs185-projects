@@ -1,0 +1,17 @@
+{
+  "name": "test-case-runner",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "karma start"
+  },
+  "dependencies": {
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-htmlfile-reporter": "^0.2.2",
+    "karma-jasmine": "^0.3.6"
+  }
+}

@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Rock+Salt);
+
+body {
+    margin: 0;
+    background-color: #e6e6e6;
+    font-family: 'Vollkorn', serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px 0;
+}
+
+header > h1 {
+    flex: 1.33;
+    margin: 0;
+}
+
+header > div {
+    flex: 0.67;
+}
+
+header input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+h2 {
+    color: #AC563B;
+}
+
+h1 {
+    color: cadetblue;
+    font-family: 'Rock Salt', cursive;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/*dd {
+    display: inline-block;
+    width: 150px;
+    margin: 0;
+}*/
+
+.container {
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: white;;
+}
+
+#menu li {
+    border: solid 1px cadetblue;
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+}
+
+#menu li:last-child {
+    margin-bottom: 0;
+}
+
+#menu li > * {
+    flex: 1;
+}
+
+#menu li h2 {
+    margin: 0;
+}
+
+#menu li h2 + div {
+    color: #333;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
