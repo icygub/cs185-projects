@@ -4,45 +4,49 @@ document.getElementById('searchBox').addEventListener('keydown', function (event
   if (event.which === 13 || event.keyCode === 13) {
 
     var searchText = this.value;
-    // let node = document.getElementById("bullet");
-    // alert(node.id);
 
-    //let children = node.childNodes;
-
-    //children[0].parentNode.style.backgroundColor = "red";
-
-    // let a = 0;
-    // function search(node) {
-    //   if(node.nodeType === Node.TEXT_NODE) {
-    //     node.parentNode.style.backgroundColor = "yellow";
-    //     alert(node.id);
-    //     //a = a + 1;
-    //     return;
-    //   }
-    //   else if(node.hasChildNodes()) {
-    //     let children = node.childNodes;
-    //     let i;
-    //     for(i = 0; i < children.length; i++) {
-    //       search(children[i]);
-    //     }
-    //   }
-    // }
-    //
-    // search(document.getElementById("h2-pasta-caprese"));
     var i;
     var nodes = document.getElementsByTagName("*");
-    alert(nodes.length);
+    var matchingSearches = 0;
     for (i = 0; i < nodes.length; i++) {
       var node = nodes[i];
       if(node.hasChildNodes()) {
         if(node.childNodes.length === 1) {
           if(node.childNodes[0].nodeType === Node.TEXT_NODE) {
-            if(node.innerHTML)
+            if(searchText == "") {
+              node.style.display = "block";
+              node.style.backgroundColor = "white";
+            }
+            else if(node.innerHTML.toUpperCase() == searchText.toUpperCase()) {
+              matchingSearches++;
+              node.style.backgroundColor = "yellow";
+              node.style.display = "block";
+            }
+            else {
+              node.style.backgroundColor = "white";
+              node.style.display = "none";
+            }
           }
         }
       }
     }
 
+    var x;
+    if(matchingSearches == 0 && searchText != "") {
+      for (x = 0; x < nodes.length; x++) {
+        var node = nodes[x];
+        if(node.hasChildNodes()) {
+          if(node.childNodes.length === 1) {
+            if(node.childNodes[0].nodeType === Node.TEXT_NODE) {
+              node.style.backgroundColor = "white";
+              node.style.display = "none";
+            }
+          }
+        }
+      }
+    }
+
+    matchingSearches = 0; //reset
 
   }
 });
