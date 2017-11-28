@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    margin: 0;
+    background-color: #111;
+    font-family: 'Open Sans', sans-serif;
+    color: #e8e8e8;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.container {
+    max-width: 510px;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container div {
+    float: left;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    cursor: zoom-in;
+}
+
+div.image-display {
+    position: absolute;
+}
+
+div.image-display img {
+    max-width: 500px;
+    max-height: 500px;
+}

@@ -35,16 +35,23 @@ document.getElementById('searchBox').addEventListener('keydown', function (event
     if(matchingSearches == 0 && searchText != "") {
       for (x = 0; x < nodes.length; x++) {
         var node = nodes[x];
-        if(node.hasChildNodes()) {
-          if(node.childNodes.length === 1) {
-            if(node.childNodes[0].nodeType === Node.TEXT_NODE) {
-              node.style.backgroundColor = "white";
-              node.style.display = "none";
-            }
-          }
-        }
+        node.style.backgroundColor = "white";
+        node.style.display = "none";          
       }
     }
+    // if(matchingSearches == 0 && searchText != "") {
+    //   for (x = 0; x < nodes.length; x++) {
+    //     var node = nodes[x];
+    //     if(node.hasChildNodes()) {
+    //       if(node.childNodes.length === 1) {
+    //         if(node.childNodes[0].nodeType === Node.TEXT_NODE) {
+    //           node.style.backgroundColor = "white";
+    //           node.style.display = "none";
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
 
     matchingSearches = 0; //reset
 
