@@ -1,0 +1,60 @@
+
+.btn {
+
+  border: 1px;
+  border-color: black;
+  color: white;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+}
+
+.grid {
+  padding: 20px;
+}
+
+.scrollable {
+    height:300px;
+    width:200px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 82%;
+    overflow:scroll;
+    float: right;
+    display: block;
+}
+
+.textareacontainer {
+  margin: 50px;
+  background-color: black;
+}
+
+#label {
+  display: block;
+
+}
+
+#textarea {
+  display: block;
+  overflow:scroll;
+  font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  height: 200px;
+  width: 120px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.XClicked {
+  background-color: orange;
+  font-size: 40px;
+  color: black;
+}
+
+.OClicked {
+  background-color: purple;
+  font-size: 40px;
+}
